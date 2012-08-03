@@ -1,0 +1,7 @@
+Aihe: Jäsenkortisto
+ 
+Yhdistyksen jäsenkortisto -sovellus mahdollistaa jäsenten tietojen tallentamisen ja jäsenten tietojen hakemisen. Jäsenkortistoon tallennetaan jäsenen nimi, yhteystiedot ja syntymäaika sekä tieto siitä, minkä jaoston toiminnasta jäsen on kiinnostunut. Mikäli jäsenelle on haettu ansio- tai ajajamerkkiä tai jäsenelle on myönnetty toimitsijalisenssi, tallennetaan tämä tieto myös jäsenen tietoihin.
+ 
+Jäsenkortistosta tulee pystyä hakemaan jäseniä tietoihin kohdistuvien hakukriteereiden mukaan. Jäseniä pitää pystyä hakemaan ainakin jäsenen nimen, jaoksen ja syntymäajan mukaan. Olisi hyvä, jos pystyisi myös hakemaan sen tiedon mukaan, kenellä jäsenellä on ansio- tai ajajamerkki tai toimitsijalisenssi, mutta tämä ei ole välttämätöntä.
+ 
+Loppukäyttäjä käyttää ohjelmaa graafisen käyttöliittymän kautta. Tiedot olisi tarkoitus saada tallennettua/kirjoitettua csv-tiedostoon.
