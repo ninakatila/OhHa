@@ -42,41 +42,10 @@ public class Jasenkortisto2Test {
     @Test
     public void testAsetaJasen() {
         System.out.println("asetaJasen");
-        Jasen uusiJasen = null;
+        
         Jasenkortisto2 instance = new Jasenkortisto2();
-        instance.asetaJasen(uusiJasen);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of haeJasenlistassa method, of class Jasenkortisto2.
-     */
-    @Test
-    public void testHaeJasenlistassa() {
-        System.out.println("haeJasenlistassa");
-        int jasenlistassa = 0;
-        Jasenkortisto2 instance = new Jasenkortisto2();
-        int expResult = 0;
-        int result = instance.haeJasenlistassa(jasenlistassa);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of haeJasen method, of class Jasenkortisto2.
-     */
-    @Test
-    public void testHaeJasen() {
-        System.out.println("haeJasen");
-        int indeksi = 0;
-        Jasenkortisto2 instance = new Jasenkortisto2();
-        Jasen expResult = null;
-        Jasen result = instance.haeJasen(indeksi);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.asetaJasen(new Jasen ("Taina","Testaaja","Testikatu","00100",
+                "Helsinki","testi@testi.com","045888999",8,8,1979,2012));
     }
 
 }

@@ -37,325 +37,265 @@ public class JasenTest {
     }
 
     /**
-     * Test of asetaEtunimi method, of class Jasen.
+     * Metodin asetaEtunimi testaus.
      */
     @Test
     public void testAsetaEtunimi() {
         System.out.println("asetaEtunimi");
-        String etunimi = "";
+        String etunimi = "Tauno";
         Jasen instance = new Jasen();
         instance.asetaEtunimi(etunimi);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaSukunimi method, of class Jasen.
+     * Metodin asetaSukunimi testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaSukunimi() {
         System.out.println("asetaSukunimi");
-        String sukunimi = "";
+        String sukunimi = "Testaaja";
         Jasen instance = new Jasen();
         instance.asetaSukunimi(sukunimi);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaOsoite method, of class Jasen.
+     * Metodin asetaOsoite testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaOsoite() {
         System.out.println("asetaOsoite");
-        String osoite = "";
+        String osoite = "jokukatu";
         Jasen instance = new Jasen();
         instance.asetaOsoite(osoite);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaPostinumero method, of class Jasen.
+     * Metodin asetaPostinumero testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaPostinumero() {
         System.out.println("asetaPostinumero");
-        String postinumero = "";
+        String postinumero = "00100";
         Jasen instance = new Jasen();
         instance.asetaPostinumero(postinumero);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaKaupunki method, of class Jasen.
+     * Metodin asetaKaupunki testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaKaupunki() {
         System.out.println("asetaKaupunki");
-        String kaupunki = "";
+        String kaupunki = "Helsinki";
         Jasen instance = new Jasen();
         instance.asetaKaupunki(kaupunki);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaSposti method, of class Jasen.
+     * Metodin asetaSposti testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaSposti() {
         System.out.println("asetaSposti");
-        String sposti = "";
+        String sposti = "tauno.testaaja@testi.fi";
         Jasen instance = new Jasen();
         instance.asetaSposti(sposti);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaPuhelin method, of class Jasen.
+     * Metodin asetaPuhelin testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaPuhelin() {
         System.out.println("asetaPuhelin");
-        String puhelin = "";
+        String puhelin = "050123456";
         Jasen instance = new Jasen();
         instance.asetaPuhelin(puhelin);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaSyntymapv method, of class Jasen.
+     * Metodin asetaSyntymapv testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaSyntymapv() {
         System.out.println("asetaSyntymapv");
-        int syntymapv = 0;
+        int syntymapv = 15;
         Jasen instance = new Jasen();
         instance.asetaSyntymapv(syntymapv);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaSyntymakk method, of class Jasen.
+     * Metodin asetaSyntymakk testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaSyntymakk() {
         System.out.println("asetaSyntymakk");
-        int syntymakk = 0;
+        int syntymakk = 11;
         Jasen instance = new Jasen();
         instance.asetaSyntymakk(syntymakk);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaSyntymavuosi method, of class Jasen.
+     * Metodin asetaSyntymavuosi testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaSyntymavuosi() {
         System.out.println("asetaSyntymavuosi");
-        int syntymavuosi = 0;
+        int syntymavuosi = 1980;
         Jasen instance = new Jasen();
         instance.asetaSyntymavuosi(syntymavuosi);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of asetaLiittymisvuosi method, of class Jasen.
+     * Metodin asetaLiittymisvuosi testaus, luokassa Jasen.
      */
     @Test
     public void testAsetaLiittymisvuosi() {
         System.out.println("asetaLiittymisvuosi");
-        int liittymisvuosi = 0;
+        int liittymisvuosi = 2012;
         Jasen instance = new Jasen();
         instance.asetaLiittymisvuosi(liittymisvuosi);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeEtunimi method, of class Jasen.
+     * Metodin haeEtunimi testaus, luokassa Jasen.
      */
     @Test
     public void testHaeEtunimi() {
         System.out.println("haeEtunimi");
-        String etunimi = "";
+        String etunimi = "Teppo";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "Teppo";
         String result = instance.haeEtunimi(etunimi);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeSukunimi method, of class Jasen.
+     * Metodin haeSukunimi testaus, luokassa Jasen.
      */
     @Test
     public void testHaeSukunimi() {
         System.out.println("haeSukunimi");
-        String sukunimi = "";
+        String sukunimi = "Testaaja";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "Testaaja";
         String result = instance.haeSukunimi(sukunimi);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeOsoite method, of class Jasen.
+     * Metodin haeOsoite testaus, luokassa Jasen.
      */
     @Test
     public void testHaeOsoite() {
         System.out.println("haeOsoite");
-        String osoite = "";
+        String osoite = "jokutoinenkatu";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "jokutoinenkatu";
         String result = instance.haeOsoite(osoite);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haePostinumero method, of class Jasen.
+     * Metodin haePostinumero testaus, luokassa Jasen.
      */
     @Test
     public void testHaePostinumero() {
         System.out.println("haePostinumero");
-        String postinumero = "";
+        String postinumero = "00200";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "00200";
         String result = instance.haePostinumero(postinumero);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+   }
 
     /**
-     * Test of haeKaupunki method, of class Jasen.
+     * Metodin haeKaupunki testaus, luokassa Jasen. 
      */
     @Test
     public void testHaeKaupunki() {
         System.out.println("haeKaupunki");
-        String kaupunki = "";
+        String kaupunki = "Helsinki";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "Helsinki";
         String result = instance.haeKaupunki(kaupunki);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeSposti method, of class Jasen.
+     * Metodin haeSposti testaus, luokassa Jasen.
      */
     @Test
     public void testHaeSposti() {
         System.out.println("haeSposti");
-        String sposti = "";
+        String sposti = "teppo.testaaja@testi.fi";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "teppo.testaaja@testi.fi";
         String result = instance.haeSposti(sposti);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haePuhelin method, of class Jasen.
+     * Metodin haePuhelin testaus, luokassa Jasen.
      */
     @Test
     public void testHaePuhelin() {
         System.out.println("haePuhelin");
-        String puhelin = "";
+        String puhelin = "050654321";
         Jasen instance = new Jasen();
-        String expResult = "";
+        String expResult = "050654321";
         String result = instance.haePuhelin(puhelin);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeSyntymapv method, of class Jasen.
+     * Metodin haeSyntymapv testaus, luokassa Jasen.
      */
     @Test
     public void testHaeSyntymapv() {
         System.out.println("haeSyntymapv");
-        int syntymapv = 0;
+        int syntymapv = 3;
         Jasen instance = new Jasen();
-        int expResult = 0;
+        int expResult = 3;
         int result = instance.haeSyntymapv(syntymapv);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeSyntymakk method, of class Jasen.
+     * Metodin haeSyntymakk testaus, luokassa Jasen.
      */
     @Test
     public void testHaeSyntymakk() {
         System.out.println("haeSyntymakk");
-        int syntymakk = 0;
+        int syntymakk = 3;
         Jasen instance = new Jasen();
-        int expResult = 0;
+        int expResult = 3;
         int result = instance.haeSyntymakk(syntymakk);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeSyntymavuosi method, of class Jasen.
+     * Metodin haeSyntymavuosi testaus, luokassa Jasen.
      */
     @Test
     public void testHaeSyntymavuosi() {
         System.out.println("haeSyntymavuosi");
-        int syntymavuosi = 0;
+        int syntymavuosi = 2003;
         Jasen instance = new Jasen();
-        int expResult = 0;
+        int expResult = 2003;
         int result = instance.haeSyntymavuosi(syntymavuosi);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
-     * Test of haeLiittymisvuosi method, of class Jasen.
+     * Metodin haeLiittymisvuosi testaus, luokassa Jasen. 
      */
     @Test
     public void testHaeLiittymisvuosi() {
         System.out.println("haeLiittymisvuosi");
-        int liittymisvuosi = 0;
+        int liittymisvuosi = 2012;
         Jasen instance = new Jasen();
-        int expResult = 0;
+        int expResult = 2012;
         int result = instance.haeLiittymisvuosi(liittymisvuosi);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class Jasen.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        Jasen instance = new Jasen();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
 }
