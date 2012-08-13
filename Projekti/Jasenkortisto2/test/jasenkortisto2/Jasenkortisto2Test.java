@@ -44,7 +44,7 @@ public class Jasenkortisto2Test {
         System.out.println("asetaJasen");
         
         Jasenkortisto2 instance = new Jasenkortisto2();
-        instance.asetaJasen(new Jasen ("Taina","Testaaja","Testikatu","00100",
+        instance.asetaJasen(new Jasen (3000,"Taina","Testaaja","Testikatu","00100",
                 "Helsinki","testi@testi.com","045888999",8,8,1979,2012));
     }
 

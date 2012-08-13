@@ -9,7 +9,7 @@ public class Jasen {
     /**
      * --- piilotettu tietorakenteen toteutus: ---
      */   
-    private int liittymisvuosi, syntymapv, syntymakk, syntymavuosi;
+    private int jasennumero, liittymisvuosi, syntymapv, syntymakk, syntymavuosi;
     private String etunimi, sukunimi, osoite, postinumero, kaupunki, sposti, puhelin;
            
     /**
@@ -28,10 +28,11 @@ public class Jasen {
      * @param liittymisvuosi
      */
    
-    public Jasen(String etunimi, String sukunimi,
+    public Jasen(int jasennumero, String etunimi, String sukunimi,
             String osoite, String postinumero, String kaupunki, String sposti,
             String puhelin,int syntymapv, int syntymakk, int syntymavuosi,
             int liittymisvuosi){
+        this.jasennumero=jasennumero;
         this.etunimi=etunimi;
         this.sukunimi=sukunimi;
         this.osoite=osoite;
@@ -51,7 +52,13 @@ public class Jasen {
      public Jasen(){
     
     }
-  
+     /**
+      * 
+      * @param jasennumero 
+      */
+  public void asetaJasennumero (int jasennumero){
+      this.jasennumero=jasennumero;
+  }
     /**
      * 
      * @param etunimi 
@@ -140,8 +147,16 @@ public class Jasen {
             this.liittymisvuosi=liittymisvuosi;
         }
         else System.out.println("virheellinen arvo");
-    }
     
+    }
+    /**
+     * 
+     * @param jasennumero
+     * @return 
+     */
+    public int haeJasennumero (int jasennumero){
+        return jasennumero;
+    }
     /**
      * 
      * @param etunimi
@@ -237,7 +252,7 @@ public class Jasen {
     * @return 
     */
     public String toString(){
-        return (this.etunimi+ ", "+this.sukunimi+", "+
+        return (this.jasennumero+ "," +this.etunimi+ ", "+this.sukunimi+", "+
                 this.osoite+", "+this.postinumero+", "+this.kaupunki+", "+
                 this.sposti+", "+this.puhelin+", "+this.syntymapv+", "
                 +this.syntymakk+", "+this.syntymavuosi+", "+this.liittymisvuosi);
