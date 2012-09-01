@@ -4,10 +4,7 @@
  */
 package jasenkortisto2;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -18,22 +15,6 @@ import static org.junit.Assert.*;
 public class JasenTest {
     
     public JasenTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
     }
 
     /**
@@ -145,8 +126,7 @@ public class JasenTest {
         Jasen instance = new Jasen();
         instance.asetaSyntymavuosi(syntymavuosi);
     }
-
-    /**
+        /**
      * Metodin asetaLiittymisvuosi testaus, luokassa Jasen.
      */
     @Test
@@ -156,6 +136,147 @@ public class JasenTest {
         Jasen instance = new Jasen();
         instance.asetaLiittymisvuosi(liittymisvuosi);
     }
+    /**
+     * Metodin asetaMotocrossJaostoon testaus
+     */
+    @Test
+    public void testAsetaMotocrossJaostoon() {
+        System.out.println("asetaMotocrossJaostoon");
+        boolean motocross = true;
+        Jasen instance = new Jasen();
+        instance.asetaMotocrossJaostoon(motocross);
+    }
+    /**
+     * Metodin asetaEnduroJaostoon testaus
+     */
+    @Test
+    public void testAsetaEnduroJaostoon() {
+        System.out.println("asetaEnduroJaostoon");
+        boolean enduro = true;
+        Jasen instance = new Jasen();
+        instance.asetaEnduroJaostoon(enduro);
+    }
+    /**
+     * Metodin asetaTrialJaostoon testaus
+     */
+    @Test
+    public void testAsetaTrialJaostoon() {
+        System.out.println("asetaTrialJaostoon");
+        boolean trial = true;
+        Jasen instance = new Jasen();
+        instance.asetaTrialJaostoon(trial);
+    }
+    /**
+     * Metodin asetaSupermotoJaostoon testaus
+     */
+    @Test
+    public void testAsetaSupermotoJaostoon() {
+        System.out.println("asetaSupermotoJaostoon");
+        boolean supermoto = true;
+        Jasen instance = new Jasen();
+        instance.asetaSupermotoJaostoon(supermoto);
+    }
+    /**
+     * Metodin asetaStuntJaostoon testaus
+     */
+    @Test
+    public void testAsetaStuntJaostoon() {
+        System.out.println("asetaStuntJaostoon");
+        boolean stunt = true;
+        Jasen instance = new Jasen();
+        instance.asetaStuntJaostoon(stunt);
+    }
+    /**
+     * Metodin asetaMxjJaostoon testaus
+     */
+    @Test
+    public void testAsetaMxjJaostoon() {
+        System.out.println("asetaMxjJaostoon");
+        boolean mxj = true;
+        Jasen instance = new Jasen();
+        instance.asetaMxjJaostoon(mxj);
+    }
+    /**
+     * Metodin asetaMx50Jaostoon testaus
+     */
+    @Test
+    public void testAsetaMx50Jaostoon() {
+        System.out.println("asetaMx50Jaostoon");
+        boolean mx50 = true;
+        Jasen instance = new Jasen();
+        instance.asetaMx50Jaostoon(mx50);
+    }
+    /**
+     * Metodin asetaMx65Jaostoon testaus
+     */
+    @Test
+    public void testAsetaMx65Jaostoon() {
+        System.out.println("asetaMx65Jaostoon");
+        boolean mx65 = true;
+        Jasen instance = new Jasen();
+        instance.asetaMx65Jaostoon(mx65);
+    }
+    /**
+     * Metodin asetaMx85Jaostoon testaus
+     */
+    @Test
+    public void testAsetaMx85Jaostoon() {
+        System.out.println("asetaMx85Jaostoon");
+        boolean mx85 = true;
+        Jasen instance = new Jasen();
+        instance.asetaMx85Jaostoon(mx85);
+    }
+    /**
+     * Metodin asetaAikuisetMaksuryhmaan testaus
+     */
+    @Test
+    public void testAsetaAikuisetMaksuryhmaan() {
+        System.out.println("asetaAikuisetMaksuryhmaan");
+        boolean aikuiset = true;
+        Jasen instance = new Jasen();
+        instance.asetaAikuisetMaksuryhmaan(aikuiset);
+    }
+    /**
+     * Metodin asetaJunioritMaksuryhmaan testaus
+     */
+    @Test
+    public void testAsetaJunioritMaksuryhmaan() {
+        System.out.println("asetaAikuisetMaksuryhmaan");
+        boolean juniorit = true;
+        Jasen instance = new Jasen();
+        instance.asetaJunioritMaksuryhmaan(juniorit);
+    }
+    /**
+     * Metodin asetaNaisetMaksuryhmaan testaus
+     */
+    @Test
+    public void testAsetaNaisetMaksuryhmaan() {
+        System.out.println("asetaNaisetMaksuryhmaan");
+        boolean naiset = true;
+        Jasen instance = new Jasen();
+        instance.asetaNaisetMaksuryhmaan(naiset);
+    } 
+    /**
+     * Metodin asetaAinaisjasenetMaksuryhmaan testaus
+     */
+    @Test
+    public void testAsetaAinaisjasenetMaksuryhmaan() {
+        System.out.println("asetaAinaisjasenetMaksuryhmaan");
+        boolean ainaisjasenet = true;
+        Jasen instance = new Jasen();
+        instance.asetaAinaisjasenetMaksuryhmaan(ainaisjasenet);
+    }
+    /**
+     * Metodin asetaJasenmaksu testaus
+     */
+    @Test
+    public void testAsetaJasenamaksu() {
+        System.out.println("asetaJasenmaksu");
+        boolean jasenmaksu = true;
+        Jasen instance = new Jasen();
+        instance.asetaJasenmaksu(jasenmaksu);
+    }
+
 
     /**
      * Metodin haeEtunimi testaus, luokassa Jasen.
@@ -297,5 +418,172 @@ public class JasenTest {
         int result = instance.haeLiittymisvuosi(liittymisvuosi);
         assertEquals(expResult, result);
     }
-
+    /**
+     * Metodin haeMotocrossJaostosta testaus, luokassa Jasen.
+     */
+     @Test
+    public void testHaeMotocrossJaostosta() {
+        System.out.println("haeMotocrossJaostosta");
+        boolean motocross = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeMotocrossJaostosta(motocross);
+        assertEquals(expResult, result);
+    }
+     /**
+      * Metodin haeEnduroJaostosta testaus, luokassa Jasen.
+      */
+    @Test
+    public void testHaeEnduroJaostosta() {
+        System.out.println("hae*EnduroJaostosta");
+        boolean enduro = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeEnduroJaostosta(enduro);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeTrialJaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeTrialJaostosta() {
+        System.out.println("haeTrialJaostosta");
+        boolean trial = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeTrialJaostosta(trial);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeSupermotoJaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeSupermotoJaostosta() {
+        System.out.println("haeSupermotoJaostosta");
+        boolean supermoto = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeSupermotoJaostosta(supermoto);
+        assertEquals(expResult, result);
+    }    
+    /**
+     * Metodin haeStuntJaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeStuntJaostosta() {
+        System.out.println("haeStuntJaostosta");
+        boolean stunt = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeStuntJaostosta(stunt);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeMxjJaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeMxjJaostosta() {
+        System.out.println("haeMxjJaostosta");
+        boolean mxj = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeMxjJaostosta(mxj);
+        assertEquals(expResult, result);
+    }  
+    /**
+     * Metodin haeMx50Jaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeMx50Jaostosta() {
+        System.out.println("haeMx50Jaostosta");
+        boolean mx50 = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeMx50Jaostosta(mx50);
+        assertEquals(expResult, result);
+    } 
+    /**
+     * Metodin haeMx65Jaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeMx65Jaostosta() {
+        System.out.println("haeMx65Jaostosta");
+        boolean mx65 = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeMx65Jaostosta(mx65);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeMx85Jaostosta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeMx85Jaostosta() {
+        System.out.println("haeMx85Jaostosta");
+        boolean mx85 = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeMx85Jaostosta(mx85);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeAikuisetMaksuryhmasta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeAikuisetMaksuryhmasta() {
+        System.out.println("haeAikuisetMaksuryhmasta");
+        boolean aikuiset = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeAikuisetMaksuryhmasta(aikuiset);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeJunioritMaksuryhmasta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeJunioritMaksuryhmasta() {
+        System.out.println("haejunioritMaksuryhmasta");
+        boolean juniorit = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeJunioritMaksuryhmasta(juniorit);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeNaisetMaksuryhmasta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeNaisetMaksuryhmasta() {
+        System.out.println("haeNaisetMaksuryhmasta");
+        boolean naiset = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeNaisetMaksuryhmasta(naiset);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeAinaisjasenetMaksuryhmasta testaus, luokassa Jasen.
+     */
+    @Test
+    public void testHaeAinaisjasenetMaksuryhmasta() {
+        System.out.println("haeAinaisjasenetMaksuryhmasta");
+        boolean ainaisjasenet = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeAinaisjasenetMaksuryhmasta(ainaisjasenet);
+        assertEquals(expResult, result);
+    }
+    /**
+     * Metodin haeJasenmaksu testaus, luokassa Jasen.
+     */
+    @Test
+    public void testJasenmaksu() {
+        System.out.println("haeJasenmaksu");
+        boolean jasenmaksu = true;
+        Jasen instance = new Jasen();
+        boolean expResult = true;
+        boolean result = instance.haeJasenmaksu(jasenmaksu);
+        assertEquals(expResult, result);
+    }
 }

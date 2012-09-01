@@ -4,10 +4,7 @@
  */
 package jasenkortisto2;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,22 +17,6 @@ public class Jasenkortisto2Test {
     public Jasenkortisto2Test() {
     }
 
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     /**
      * Test of asetaJasen method, of class Jasenkortisto2.
      */
@@ -44,8 +25,10 @@ public class Jasenkortisto2Test {
         System.out.println("asetaJasen");
         
         Jasenkortisto2 instance = new Jasenkortisto2();
-        instance.asetaJasen(new Jasen (3000,"Taina","Testaaja","Testikatu","00100",
-                "Helsinki","testi@testi.com","045888999",8,8,1979,2012));
+        instance.asetaJasen(new Jasen (6,"Taina","Testaaja","Testikatu","00100",
+                "Helsinki","testi@testi.com","045888999",8,8,1979,2012, true,
+                true, false, false, false, false, true, false, false,true,false,
+                false,false,true));
     }
 
 }
