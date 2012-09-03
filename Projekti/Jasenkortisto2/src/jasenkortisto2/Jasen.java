@@ -602,7 +602,8 @@ public class Jasen{
                 +"|"+kaupunki+"|"+sposti+"|"+puhelin+"|"+syntymapv+"|"+syntymakk
                 +"|"+syntymavuosi+"|"+liittymisvuosi+"|"+motocross+"|"+enduro+
                 "|"+trial+"|"+supermoto+"|"+stunt+"|"+mxj+"|"+mx50+"|"+mx65+
-                "|"+mx85+"\n";
+                "|"+mx85+"|"+aikuiset+"|"+juniorit+"|"+naiset+"|"+ainaisjasenet+
+                "|"+jasenmaksu;
     }
     
     public static void main(String[]args){//testausta varten main-metodi
