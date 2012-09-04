@@ -198,12 +198,19 @@ public class Jasenkortisto2 implements ActionListener {
 
     }
 
-public void actionPerformed(ActionEvent e) {
+    public static ActionListener actionListener(ActionListener kuuntelija) {
+        ikkuna.jButton1.addActionListener(kuuntelija);
+        ikkuna.jComboBox2.addActionListener(kuuntelija);
+        ikkuna.jButton3.addActionListener(kuuntelija);
+        return kuuntelija;
+
+    }
+
+    public void actionPerformed(ActionEvent e) {
         if (e.getSource() == ikkuna.jButton1) {
             lisaaJasen();
-        } else if (e.getSource() == ikkuna.jButton3) {
-        }
 
+        }
     }
 
     public void lisaaJasen() {
@@ -231,49 +238,40 @@ public void actionPerformed(ActionEvent e) {
         jasen.haeMx50Jaostosta(ikkuna.jCheckBox7.isSelected());
         jasen.haeMx65Jaostosta(ikkuna.jCheckBox8.isSelected());
         jasen.haeMx85Jaostosta(ikkuna.jCheckBox9.isSelected());
+             
+        if(ikkuna.jComboBox2.getSelectedItem().toString().equalsIgnoreCase
+                ("aikuiset")){
+            jasen.aikuiset=true;
+        }else if (ikkuna.jComboBox2.getSelectedItem().toString().
+                equalsIgnoreCase("juniorit")){
+            jasen.juniorit=true;
+        }else if (ikkuna.jComboBox2.getSelectedItem().toString().
+                equalsIgnoreCase("naiset")){
+            jasen.naiset=true;
+        }else if (ikkuna.jComboBox2.getSelectedItem().toString().
+                equalsIgnoreCase("ainaisjasenet")){
+            jasen.ainaisjasenet=true;
+        }
+        jasen.haeJasenmaksu(ikkuna.jCheckBox6.isSelected());
+        
+
 
         jasenlista.add(jasen);
-        System.out.println(jasenlista);
+
+        try {
+            kirjoitaKortistoon();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
-
-
-    public static void main(String[] args)throws IOException {
-
-
-        lueKortistosta();
-
-        Jasen juippi = new Jasen(1, "Juippi", "Juntunen", "Testikatu", "00100",
-                "Helsinki", "testi@testi.com", "045888999", 19, 12, 1979, 2012, true,
-                true, false, false, false, false, false, false, false, true, false, false, false, true);
-        Jasen heppu = new Jasen(1, "Heppu", "Heikko", "Testikatu", "00100",
-                "Helsinki", "testi@testi.com", "045888999", 19, 12, 1979, 2012, true,
-                true, false, false, false, false, false, false, false, true, false, false, false, true);
-        Jasen heppu2 = new Jasen(2, "Heppu", "Heikko", "Testikatu", "00100",
-                "Helsinki", "testi@testi.com", "045888999", 19, 12, 1979, 2012, true,
-                true, false, false, false, false, false, false, false, true, false, false, false, true);
-        Jasen heppu3 = new Jasen(2, "Hannu", "Heikko", "Testikatu", "00100",
-                "Helsinki", "testi@testi.com", "045888999", 19, 12, 1979, 2012, true,
-                true, false, false, false, false, false, false, false, true, false, false, false, true);
-        Jasen heppu4 = new Jasen(2, "Hannu4", "Heikko", "Testikatu", "00100",
-                "Helsinki", "testi@testi.com", "045888999", 19, 12, 1979, 2012, true,
-                true, false, false, false, false, false, false, false, true, false, false, false, true);
-        jasenlista.add(heppu);
-        jasenlista.add(juippi);
-        jasenlista.add(heppu2);
-        jasenlista.add(heppu3);
-        jasenlista.add(heppu4);
-        System.out.println(jasenlista);
-        kirjoitaKortistoon();
-
-
+    public static void main(String[] args) throws IOException {
 
 
         ikkuna = new Jasenikkuna2(new Jasenkortisto2(), jasenlista);
         ikkuna.setVisible(true);
-
-
-
+        lueKortistosta();
+        System.out.println(jasenlista);
 
     }
 }

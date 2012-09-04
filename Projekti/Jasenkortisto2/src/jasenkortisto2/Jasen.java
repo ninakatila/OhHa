@@ -274,9 +274,13 @@ public class Jasen{
      * @param aikuiset 
      */
     public void asetaAikuisetMaksuryhmaan(boolean aikuiset){
-       maksuryhma=aikuiset;
+       if (maksuryhma=aikuiset){
+            aikuiset=true;
         }
+        else aikuiset=false; 
+    }
     
+            
     /**
      * asetaJunioritMaksuryhmaan metodi asettaa jäsenen maksuryhmäksi juniorit
      * @param juniorit 
@@ -583,13 +587,13 @@ public class Jasen{
             return this.jasenmaksu=true;
         }else return this.jasenmaksu=false;
     }
-      public boolean vastaavuus(Jasen uusiJasen) {
-        if (this.sukunimi.equalsIgnoreCase(uusiJasen.sukunimi)
-                && this.etunimi.equalsIgnoreCase(uusiJasen.etunimi)
-                && this.syntymapv == uusiJasen.syntymapv
-                && this.syntymakk == uusiJasen.syntymakk
-                && this.syntymavuosi == uusiJasen.syntymavuosi
-                && this.osoite.equalsIgnoreCase(uusiJasen.osoite));
+      public boolean vastaavuus(Jasen jasen) {
+        if (this.sukunimi.equalsIgnoreCase(jasen.sukunimi)
+                && this.etunimi.equalsIgnoreCase(jasen.etunimi)
+                && this.syntymapv == jasen.syntymapv
+                && this.syntymakk == jasen.syntymakk
+                && this.syntymavuosi == jasen.syntymavuosi
+                && this.osoite.equalsIgnoreCase(jasen.osoite));
         return true;
     }  
     
