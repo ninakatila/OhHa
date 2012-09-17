@@ -573,7 +573,7 @@ public class Jasenkortisto2 implements ActionListener {
      * kortisto csv-tiedostoon kovalevylle.
      */
     public static void muutaJasen() {
-        Jasen muutettava= jasenlista.get(26);
+        Jasen muutettava= (Jasen)ikkuna.jList1.getSelectedValue();
         int i = jasenlista.indexOf(muutettava);
         muutettava.asetaEtunimi(ikkuna.jTextField1.getText());
         muutettava.asetaSukunimi(ikkuna.jTextField2.getText());
@@ -655,68 +655,5 @@ public class Jasenkortisto2 implements ActionListener {
         ikkuna = new Jasenikkuna2(new Jasenkortisto2 (),jasenlista);
         ikkuna.setVisible(true);
         lueKortistosta();
-        Jasen etsitty=jasenlista.get(26);
-        ikkuna.jTextField1.setText(etsitty.etunimi);
-        ikkuna.jTextField2.setText(etsitty.sukunimi);
-        ikkuna.jTextField3.setText(etsitty.osoite);
-        ikkuna.jTextField4.setText(etsitty.postinumero);
-        ikkuna.jTextField5.setText(etsitty.kaupunki);
-        ikkuna.jTextField6.setText(etsitty.puhelin);
-        ikkuna.jTextField7.setText(etsitty.sposti);
-        ikkuna.jComboBox3.setSelectedItem(etsitty.syntymapv);
-        ikkuna.jComboBox4.setSelectedItem(etsitty.syntymakk);
-        ikkuna.jComboBox5.setSelectedItem(etsitty.syntymavuosi);
-        ikkuna.jComboBox6.setSelectedItem(etsitty.liittymisvuosi);
-        if (etsitty.jaos=etsitty.motocross){
-            ikkuna.jCheckBox1.isSelected();
-        }
-        if (etsitty.jaos=etsitty.enduro){
-            ikkuna.jCheckBox2.isSelected();
-        }
-        if (etsitty.jaos=etsitty.trial){
-            ikkuna.jCheckBox3.isSelected();
-        }
-        if (etsitty.jaos=etsitty.supermoto){
-            ikkuna.jCheckBox4.isSelected();
-        }
-        if (etsitty.jaos=etsitty.stunt){
-            ikkuna.jCheckBox5.isSelected();
-        }
-        if (etsitty.jaos=etsitty.mxj){
-            ikkuna.jCheckBox10.isSelected();
-        }
-        if (etsitty.jaos=etsitty.mx50){
-            ikkuna.jCheckBox7.isSelected();
-        }
-        if (etsitty.jaos=etsitty.mx65){
-            ikkuna.jCheckBox8.isSelected();
-        }
-        if (etsitty.jaos=etsitty.mx85){
-            ikkuna.jCheckBox9.isSelected();
-        }
-        if (etsitty.maksuryhma=etsitty.aikuiset){
-            ikkuna.jComboBox2.setSelectedIndex(1);            
-        }
-        if (etsitty.maksuryhma=etsitty.juniorit){
-            ikkuna.jComboBox2.setSelectedIndex(2);
-        }
-        if (etsitty.maksuryhma=etsitty.naiset){
-            ikkuna.jComboBox2.setSelectedIndex(3);            
-        }
-        if (etsitty.maksuryhma=etsitty.ainaisjasenet){
-            ikkuna.jComboBox2.setSelectedIndex(4);            
-        }
-        if (etsitty.jasenmaksu=true){
-            ikkuna.jCheckBox6.isSelected();
-        }
-        }   
-        
-    
-        
-        
-        
-       
-
-
     }
-    
+}
