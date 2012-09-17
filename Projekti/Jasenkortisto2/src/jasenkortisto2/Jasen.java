@@ -19,6 +19,7 @@ public class Jasen{
     /**
      * Jasen -luokan konstruktorin parametrit
      *
+     * @param jasennumero
      * @param etunimi
      * @param sukunimi
      * @param osoite
@@ -316,107 +317,96 @@ public class Jasen{
     /**
      * haeJasennumero  metodi hakee ja palauttaa jäsenen jäsennumeron
      * @param jasennumero
-     * @return 
+     * @return jasennumero
      */
     public int haeJasennumero(int jasennumero){
        return jasennumero;
    } 
     /**
      * haeEtunimi metodi hakee ja palauttaa syötetyn etunimen jäsenelle 
-     * @param etunimi
-     * @return 
+     * @return etunimi
      */
-   public String haeEtunimi (String etunimi){
+   public String haeEtunimi (){
         return etunimi;
     }
    
     /**
      * haeSukunimi metodi hakee ja palauttaa syötetyn sukunimen jäsenelle  
-     * @param sukunimi
-     * @return 
+     * @return sukunimi
      */
-    public String haeSukunimi (String sukunimi){
+    public String haeSukunimi (){
         return sukunimi;
     }
     
     /**
      * haeOsoite metodi hakee ja palauttaa syötetyn osoitteen jäsenelle 
-     * @param osoite
-     * @return 
+     * @return osoite
      */
-    public String haeOsoite (String osoite){
+    public String haeOsoite (){
         return osoite;
     }
     
     /**
      * haePostinumero metodi hakee ja palauttaa syötetyn postinumeron jäsenelle 
-     * @param postinumero
-     * @return 
+     * @return postinumero
      */
-    public String haePostinumero (String postinumero){
+    public String haePostinumero (){
         return postinumero;
     }
     
     /**
      * haeKaupunki metodi hakee ja palauttaa syötetyn kaupungin jäsenelle 
-     * @param kaupunki
-     * @return 
+     * @return kaupunki
      */
-    public String haeKaupunki (String kaupunki){
+    public String haeKaupunki (){
         return kaupunki;
     }
     
     /**
      * haeSposti metodi hakee ja palauttaa syötetyn sähköpostiosoitten jäsenelle 
-     * @param sposti
-     * @return 
+     * @return sposti
      */
-    public String haeSposti (String sposti){
+    public String haeSposti (){
         return sposti;
     }
     
     /**
      * haePuhelin metodi hakee ja palauttaa syötetyn puhelinnumeron jäsenelle  
-     * @param puhelin
-     * @return 
+     * @return puhelin
      */
-    public String haePuhelin (String puhelin){
+    public String haePuhelin (){
         return puhelin;
     }
     
     /**
      * haeSyntymapv metodi hakee ja palauttaa valitun syntymäpäivän jäsenelle 
-     * @param syntymapv
-     * @return 
+     * @return syntymapv
      */
-    public int haeSyntymapv (int syntymapv){
+    public int haeSyntymapv (){
         return syntymapv;
     }
     
     /**
      * haeSyntymakk metodi hakee ja palauttaa valitun syntymäkuukauden jäsenelle 
-     * @param syntymakk
-     * @return 
+     * @return syntymakk
      */
-    public int haeSyntymakk (int syntymakk){
+    public int haeSyntymakk (){
         return syntymakk;
     }
     
     /**
      * haeSyntymavuosi metodi hakee ja palauttaa valitun syntymävuoden jäsenelle 
-     * @param syntymavuosi
-     * @return 
+     * @return syntymavuosi
      */
-    public int haeSyntymavuosi (int syntymavuosi){
+    public int haeSyntymavuosi (){
         return syntymavuosi;
     }
     
     /**
      * haeLiittymisvuosi metodi hakee ja palauttaa valitun liittymisvuoden jäsenelle 
-     * @param liittymisvuosi
-     * @return 
+     * @return liittymisvuosi
      */
-   public int haeLiittymisvuosi (int liittymisvuosi){
+   public int haeLiittymisvuosi (){
        return liittymisvuosi;
    }
    
@@ -424,7 +414,7 @@ public class Jasen{
     * haeMotocrossjaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
     * asetettu motocrossjaostoon, true=kyllä on ja false=ei ole
     * @param motocross
-    * @return 
+    * @return this.motocross=true
     */
     public boolean haeMotocrossJaostosta (boolean motocross){
         if (jaos=motocross){
@@ -436,7 +426,7 @@ public class Jasen{
      * haeEndurojaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu endurojaostoon, true=kyllä on ja false=ei ole
      * @param enduro
-     * @return 
+     * @return this.enduro=true
      */
     public boolean haeEnduroJaostosta (boolean enduro){
         if (jaos=enduro){
@@ -448,7 +438,7 @@ public class Jasen{
      * haeTrialjaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu trialjaostoon, true=kyllä on ja false=ei ole
      * @param trial
-     * @return 
+     * @return this.trial=true
      */
     public boolean haeTrialJaostosta (boolean trial){
         if (jaos=trial){
@@ -460,7 +450,7 @@ public class Jasen{
      * haeSupermotojaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu supermotojaostoon, true=kyllä on ja false=ei ole
      * @param supermoto
-     * @return 
+     * @return this.supermoto=true
      */
     public boolean haeSupermotoJaostosta (boolean supermoto){
         if (jaos=supermoto){
@@ -472,7 +462,7 @@ public class Jasen{
      * haeStuntjaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu stuntjaostoon, true=kyllä on ja false=ei ole
      * @param stunt
-     * @return 
+     * @return this.stunt=true
      */
     public boolean haeStuntJaostosta (boolean stunt){
         if (jaos=stunt){
@@ -484,7 +474,7 @@ public class Jasen{
      * haeMxjjaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu mxjjaostoon, true=kyllä on ja false=ei ole
      * @param mxj
-     * @return 
+     * @return this.mxj=true
      */
     public boolean haeMxjJaostosta (boolean mxj){
         if (jaos=mxj){
@@ -496,7 +486,7 @@ public class Jasen{
      * haeMx50jaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu mx50jaostoon, true=kyllä on ja false=ei ole
      * @param mx50
-     * @return 
+     * @return this.mx50=true
      */
     public boolean haeMx50Jaostosta (boolean mx50){
         if (jaos=mx50){
@@ -508,7 +498,7 @@ public class Jasen{
      * haeMx65jaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu mx65jaostoon, true=kyllä on ja false=ei ole
      * @param mx65
-     * @return 
+     * @return this.mx65=true
      */
     public boolean haeMx65Jaostosta (boolean mx65){
         if (jaos=mx65){
@@ -520,7 +510,7 @@ public class Jasen{
      * haeMx85jaostosta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu mx85jaostoon, true=kyllä on ja false=ei ole
      * @param mx85
-     * @return 
+     * @return this.mx85=true
      */
     public boolean haeMx85Jaostosta (boolean mx85){
         if (jaos=mx85){
@@ -532,7 +522,7 @@ public class Jasen{
      * haeAikuisetMaksuryhmasta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu maksuryhmään aikuiset, true=kyllä on ja false=ei ole
      * @param aikuiset
-     * @return 
+     * @return this.aikuiset=true
      */
     public boolean haeAikuisetMaksuryhmasta (boolean aikuiset){
         if (maksuryhma=aikuiset){
@@ -544,7 +534,7 @@ public class Jasen{
      * haeJunioritMaksuryhmasta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu maksuryhmään juniorit, true=kyllä on ja false=ei ole
      * @param juniorit
-     * @return 
+     * @return this.juniorit=true
      */
      public boolean haeJunioritMaksuryhmasta (boolean juniorit){
         if (maksuryhma=juniorit){
@@ -556,7 +546,7 @@ public class Jasen{
      * haeNaisetMaksuryhmasta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu maksuryhmään naiset, true=kyllä on ja false=ei ole
      * @param naiset
-     * @return 
+     * @return this.naiset=true
      */
       public boolean haeNaisetMaksuryhmasta (boolean naiset){
         if (maksuryhma=naiset){
@@ -568,7 +558,7 @@ public class Jasen{
      * haeAinaisjasenetMaksuryhmasta metodi hakee ja palauttaa totuusarvon siitä onko jäsen
      * asetettu maksuryhmään ainaisjasenet, true=kyllä on ja false=ei ole
      * @param ainaisjasenet
-     * @return 
+     * @return this.ainaisjasenet=true
      */
        public boolean haeAinaisjasenetMaksuryhmasta (boolean ainaisjasenet){
         if (maksuryhma=ainaisjasenet){
@@ -580,26 +570,18 @@ public class Jasen{
      * haeJasenmaksu metodi hakee ja palauttaa totuusarvon siitä onko jäsenen
      * jasenmaksu asetettu maksetuksi, true=kyllä on ja false=ei ole
      * @param jasenmaksu
-     * @return 
+     * @return this.jasenmaksu=true
      */
     public boolean haeJasenmaksu (boolean jasenmaksu){
         if (jasenmaksu=true){
             return this.jasenmaksu=true;
         }else return this.jasenmaksu=false;
-    }
-      public boolean vastaavuus(Jasen jasen) {
-        if (this.sukunimi.equalsIgnoreCase(jasen.sukunimi)
-                && this.etunimi.equalsIgnoreCase(jasen.etunimi)
-                && this.syntymapv == jasen.syntymapv
-                && this.syntymakk == jasen.syntymakk
-                && this.syntymavuosi == jasen.syntymavuosi
-                && this.osoite.equalsIgnoreCase(jasen.osoite));
-        return true;
+    
     }  
     
     /**
      * toString metodi palauttaa jasenelle syötetyt ja asetetut tiedot
-     * @return 
+     * 
      */
     public String toString(){
         return jasennumero+"|"+etunimi+"|"+sukunimi+"|"+osoite+"|"+postinumero
@@ -610,43 +592,4 @@ public class Jasen{
                 "|"+jasenmaksu;
     }
     
-    public static void main(String[]args){//testausta varten main-metodi
-        Jasen jasen1=new Jasen (1,"Teppo Tauno","Testaaja","Testikatu","00100",
-                "Helsinki","testi@testi.com","045888999",31,12,1979,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-        
-        Jasen jasen2=new Jasen (2,"Taina","Testaaja","Testikatu","00100",
-                "Helsinki","testi@testi.com","045888999",31,12,1979,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-        Jasen jasen3=new Jasen (3,"Tatu","Testaaja","Testikatu","00100",
-                "Helsinki","testi@testi.com","045888999",31,12,1999,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-        Jasen jasen4=new Jasen (4,"Teemu","Testaaja","Testikatu","00100",
-                "Helsinki","testi@testi.com","045888999",31,12,1999,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-        Jasen jasen5=new Jasen (5,"Matti","Mainio","Mestarinkatu 8","00200",
-                "Helsinki","testi@posti.fi","05077777",1,3,1979,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-         Jasen jasen6=new Jasen (6,"Maija","Mainio","Mestarinkatu 8","00200",
-                "Helsinki","testi@posti.fi","05077777",1,3,1979,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-          Jasen jasen7=new Jasen (7,"Mika","Mainio","Mestarinkatu 8","00200",
-                "Helsinki","testi@posti.fi","05077777",1,3,1999,2012,true,
-                true, false, false, false, false, false, false, false, true, false,
-                false, false, false);
-        System.out.println(jasen1);
-        System.out.println(jasen2);
-        System.out.println(jasen3);
-        System.out.println(jasen4);
-        System.out.println(jasen5);
-        System.out.println(jasen6);
-        System.out.println(jasen7);
-    }
 }
-

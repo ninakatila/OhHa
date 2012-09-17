@@ -287,7 +287,7 @@ public class JasenTest {
         String etunimi = "Teppo";
         Jasen instance = new Jasen();
         String expResult = "Teppo";
-        String result = instance.haeEtunimi(etunimi);
+        String result = instance.haeEtunimi();
         assertEquals(expResult, result);
     }
 
@@ -300,7 +300,7 @@ public class JasenTest {
         String sukunimi = "Testaaja";
         Jasen instance = new Jasen();
         String expResult = "Testaaja";
-        String result = instance.haeSukunimi(sukunimi);
+        String result = instance.haeSukunimi();
         assertEquals(expResult, result);
     }
 
@@ -313,7 +313,7 @@ public class JasenTest {
         String osoite = "jokutoinenkatu";
         Jasen instance = new Jasen();
         String expResult = "jokutoinenkatu";
-        String result = instance.haeOsoite(osoite);
+        String result = instance.haeOsoite();
         assertEquals(expResult, result);
     }
 
@@ -326,7 +326,7 @@ public class JasenTest {
         String postinumero = "00200";
         Jasen instance = new Jasen();
         String expResult = "00200";
-        String result = instance.haePostinumero(postinumero);
+        String result = instance.haePostinumero();
    }
 
     /**
@@ -338,7 +338,7 @@ public class JasenTest {
         String kaupunki = "Helsinki";
         Jasen instance = new Jasen();
         String expResult = "Helsinki";
-        String result = instance.haeKaupunki(kaupunki);
+        String result = instance.haeKaupunki();
         assertEquals(expResult, result);
     }
 
@@ -351,7 +351,7 @@ public class JasenTest {
         String sposti = "teppo.testaaja@testi.fi";
         Jasen instance = new Jasen();
         String expResult = "teppo.testaaja@testi.fi";
-        String result = instance.haeSposti(sposti);
+        String result = instance.haeSposti();
         assertEquals(expResult, result);
     }
 
@@ -364,7 +364,7 @@ public class JasenTest {
         String puhelin = "050654321";
         Jasen instance = new Jasen();
         String expResult = "050654321";
-        String result = instance.haePuhelin(puhelin);
+        String result = instance.haePuhelin();
     }
 
     /**
@@ -376,7 +376,7 @@ public class JasenTest {
         int syntymapv = 3;
         Jasen instance = new Jasen();
         int expResult = 3;
-        int result = instance.haeSyntymapv(syntymapv);
+        int result = instance.haeSyntymapv();
         assertEquals(expResult, result);
     }
 
@@ -389,7 +389,7 @@ public class JasenTest {
         int syntymakk = 3;
         Jasen instance = new Jasen();
         int expResult = 3;
-        int result = instance.haeSyntymakk(syntymakk);
+        int result = instance.haeSyntymakk();
         assertEquals(expResult, result);
     }
 
@@ -402,7 +402,7 @@ public class JasenTest {
         int syntymavuosi = 2003;
         Jasen instance = new Jasen();
         int expResult = 2003;
-        int result = instance.haeSyntymavuosi(syntymavuosi);
+        int result = instance.haeSyntymavuosi();
         assertEquals(expResult, result);
     }
 
@@ -415,7 +415,7 @@ public class JasenTest {
         int liittymisvuosi = 2012;
         Jasen instance = new Jasen();
         int expResult = 2012;
-        int result = instance.haeLiittymisvuosi(liittymisvuosi);
+        int result = instance.haeLiittymisvuosi();
         assertEquals(expResult, result);
     }
     /**
